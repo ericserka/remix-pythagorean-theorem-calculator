@@ -7,10 +7,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+import favicon from '~/images/favicon.png'
 import stylesheet from '~/tailwind.css'
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
+  { rel: 'icon', href: favicon, type: 'image/png' },
 ]
 
 export default function App() {
